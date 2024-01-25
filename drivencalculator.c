@@ -56,6 +56,13 @@ int mul(int a,int b){
     printf("\nMultiplication = %d",res);
 }
 int div(int a,int b){
-    int res=a/b;
+    int res;
+    if(b && a!=0){
+    res=a/b;
     printf("\nDivision = %d",res);
+    }
+    else{
+        printf("\nError!!! 0 is not divisable.");
+    }
+    
 }
